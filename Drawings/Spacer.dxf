@@ -33,19 +33,19 @@ $INSBASE
   9
 $EXTMIN
  10
-2102.672890905942
+2103.757093936415
  20
-1076.078600611584
+1079.520043329791
  30
--0.0000000349181948
+-0.0000000000112498
   9
 $EXTMAX
  10
-2124.602413565784
+2119.804427216521
  20
-1095.110525984858
+1093.305841996767
  30
-0.0000000814935746
+0.0000000000002956
   9
 $LIMMIN
  10
@@ -501,19 +501,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2457140.702553542
+2457140.737545891
   9
 $TDUUPDATE
  40
-2457140.577553542
+2457140.612545891
   9
 $TDINDWG
  40
-0.2810447338
+0.2830028356
   9
 $TDUSRTIMER
  40
-0.2810446759
+0.2830027778
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-1DD3
+1DE1
   9
 $SURFTAB1
  70
@@ -937,7 +937,7 @@ $FINGERPRINTGUID
   9
 $VERSIONGUID
   2
-{A6B67876-452E-4274-90DE-4CC40CA5831F}
+{C21C0338-C54B-4C68-9BE9-6253510901C3}
   9
 $EXTNAMES
 290
@@ -1151,7 +1151,7 @@ ObjectDBX Classes
  90
         0
  91
-       11
+        9
 280
      0
 281
@@ -1391,7 +1391,7 @@ ObjectDBX Classes
  90
         0
  91
-        2
+        1
 280
      0
 281
@@ -1501,7 +1501,7 @@ AcDbViewportTableRecord
  21
 1.0
  12
--228.1303491360958
+-228.0980052806974
  22
 -132.0292055049105
  13
@@ -1529,9 +1529,9 @@ AcDbViewportTableRecord
  37
 0.0
  40
-20.0141431018842
+20.01732001032971
  41
-2.26241134751773
+2.265643447461629
  42
 50.0
  43
@@ -1619,7 +1619,7 @@ LTYPE
 100
 AcDbSymbolTable
  70
-     5
+     3
   0
 LTYPE
   5
@@ -1967,7 +1967,7 @@ VIEW
 100
 AcDbSymbolTable
  70
-     1
+     0
   0
 ENDTAB
   0
@@ -2205,7 +2205,7 @@ A
 100
 AcDbSymbolTable
  70
-     3
+     2
 100
 AcDbDimStyleTable
  71
@@ -2321,7 +2321,7 @@ BLOCK_RECORD
 100
 AcDbSymbolTable
  70
-     8
+     6
   0
 BLOCK_RECORD
   5
@@ -2379,7 +2379,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D2
+*D0
 340
 0
  70
@@ -2399,7 +2399,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D3
+*D1
 340
 0
  70
@@ -2419,7 +2419,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D4
+*D2
 340
 0
  70
@@ -2439,7 +2439,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D5
+*D3
 340
 0
  70
@@ -2459,7 +2459,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D6
+*D4
 340
 0
  70
@@ -2569,7 +2569,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D2
+*D0
  70
      1
  10
@@ -2579,7 +2579,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D2
+*D0
   1
 
   0
@@ -2881,7 +2881,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D3
+*D1
  70
      1
  10
@@ -2891,7 +2891,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D3
+*D1
   1
 
   0
@@ -3193,7 +3193,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D4
+*D2
  70
      1
  10
@@ -3203,7 +3203,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D4
+*D2
   1
 
   0
@@ -3505,7 +3505,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D5
+*D3
  70
      1
  10
@@ -3515,7 +3515,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D5
+*D3
   1
 
   0
@@ -3811,7 +3811,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D6
+*D4
  70
      1
  10
@@ -3821,7 +3821,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D6
+*D4
   1
 
   0
@@ -4691,7 +4691,7 @@ AcDbDimension
 280
      0
   2
-*D2
+*D0
  10
 2104.974733674197
  20
@@ -4765,7 +4765,7 @@ AcDbDimension
 280
      0
   2
-*D3
+*D1
  10
 2107.474733674197
  20
@@ -4839,7 +4839,7 @@ AcDbDimension
 280
      0
   2
-*D4
+*D2
  10
 2119.474733674196
  20
@@ -4913,7 +4913,7 @@ AcDbDimension
 280
      0
   2
-*D5
+*D3
  10
 2115.974733674196
  20
@@ -4985,7 +4985,7 @@ AcDbDimension
 280
      0
   2
-*D6
+*D4
  10
 2116.974733674195
  20
@@ -5131,7 +5131,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-1DD2
+1DE0
   3
 AcDbVariableDictionary
 350
@@ -5661,7 +5661,7 @@ X-Ray
   0
 XRECORD
   5
-1DD2
+1DE0
 102
 {ACAD_REACTORS
 330
@@ -5767,49 +5767,49 @@ AcDbSortentsTable
 330
 1F
 331
-1C65
+1C62
   5
-1C75
-331
 1C66
-  5
-1C76
 331
 1C67
   5
 1C77
 331
-1C68
+1C85
   5
-1C78
-331
-1C5F
-  5
-1C63
-331
 1C60
-  5
-1C64
-331
-1C61
-  5
-1C65
-331
-1C62
-  5
-1C66
 331
 1C63
   5
 1C67
 331
-1C85
+1C5F
   5
-1C60
+1C63
+331
+1C68
+  5
+1C78
 331
 1C64
   5
 1C68
+331
+1C60
+  5
+1C64
+331
+1C65
+  5
+1C75
+331
+1C61
+  5
+1C65
+331
+1C66
+  5
+1C76
   0
 DIMASSOC
   5
@@ -6237,27 +6237,27 @@ AcDbPlotSettings
   1
 
   2
-HP Photosmart B110 series.pc3
+PublishToWeb PNG.pc3
   4
-A4
+Sun_Hi-Res_(1600.00_x_1280.00_Pixels)
   6
 
  40
-3.96875
+0.0
  41
-3.96875
+0.0
  42
-3.96875
+0.0
  43
-3.96875
+0.0
  44
-210.0579986572266
+1600.0
  45
-296.8836669921875
+1280.0
  46
-72.52932725355822
+479.0533343978677
  47
-117.7545215634818
+364.2840266604708
  48
 0.0
  49
@@ -6267,15 +6267,15 @@ A4
 141
 0.0
 142
-4.0
+10.0
 143
-1.0
+0.25
  70
  11940
  72
-     1
+     2
  73
-     1
+     0
  74
      1
   7
@@ -6283,7 +6283,7 @@ monochrome.ctb
  75
      0
 147
-5.353841973920223
+4.0
  76
      0
  77
@@ -6291,9 +6291,9 @@ monochrome.ctb
  78
    300
 148
-233.5902450146678
+238.1275660489891
 149
-139.1531424702225
+137.7152367153217
 100
 AcDbLayout
   1
@@ -6357,11 +6357,11 @@ EA
 1001
 ACAD_PSEXT
 1000
-HP Photosmart B110 series.pc3
+PublishToWeb PNG.pc3
 1000
-HP Photosmart B110 series
+Portable Network Graphics PNG (LZH Compression)
 1000
-USB001
+File
 1000
 
 1070
@@ -13707,7 +13707,7 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1DD1
+1DDF
   0
 DICTIONARY
   5
@@ -13799,7 +13799,7 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1DD0
+1DDE
   0
 DICTIONARY
   5
@@ -13815,11 +13815,11 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-1DCF
+1DDD
   0
 XRECORD
   5
-1DD1
+1DDF
 102
 {ACAD_REACTORS
 330
@@ -14259,7 +14259,7 @@ AcDbXrecord
   0
 XRECORD
   5
-1DD0
+1DDE
 102
 {ACAD_REACTORS
 330
@@ -14283,7 +14283,7 @@ FLAGS
   0
 CELLSTYLEMAP
   5
-1DCF
+1DDD
 102
 {ACAD_REACTORS
 330
