@@ -16,7 +16,7 @@ int accelType = 0, dir = 0, micRes[2] = {0, 1};
 unsigned long time = 0, start = 0;
 
 void setup() {
-  path = 900 / 2.5 / 16 * 200;
+  path = 900 / 2 / 14 * 200;
   //path (steps) = path (mm) / timing belt pitch (mm) / teeths on pulley * steps per turnover;
   vRatio = 0.9821;
   Serial.begin(9600);
