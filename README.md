@@ -1,3 +1,4 @@
+## Слайдер
 ![dsc_0444](https://cloud.githubusercontent.com/assets/12122264/7357607/6d51bbba-ed38-11e4-83c1-7b2e98ea3a0e.jpg)
 
 #### Особенности устройства
