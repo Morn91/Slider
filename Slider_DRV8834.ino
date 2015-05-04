@@ -18,7 +18,7 @@ unsigned long time = 0, start = 0;
 void setup() {
   path = 900 / 2 / 14 * 200;
   //path (steps) = path (mm) / timing belt pitch (mm) / teeths on pulley * steps per turnover;
-  vRatio = 0.9821;
+  vRatio = 1;
   Serial.begin(9600);
   stepper.setMaxSpeed(DRIVER_MAX);
   stepper.setSpeed(0);
