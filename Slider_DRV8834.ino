@@ -13,9 +13,9 @@
 
 AccelStepper stepper(AccelStepper::DRIVER, STEP, DIR);
 
-float path, vRatio, motorSpeed = 0, elapsed = 0;
+float path, vRatio = 1, motorSpeed = 0, time = 0, elapsed = 0;
 int accelType = 0, dir = 0, micRes[2] = {0, 1};
-unsigned long time = 0, start = 0;
+unsigned long start = 0;
 
 void setup() {
   path = 900 / 2 / 14 * 200;
@@ -48,12 +48,13 @@ void tuning() {
     case '+':
       delay(100);
       char buffer[20];
-      int i = 0;
+      int i = 0, tmpTime = 0;
       while(Serial.available() && i < 19)
         buffer[i++] = Serial.read();
       buffer[i++] = '\0';
-      sscanf(buffer, "%d %d %d", &dir, &accelType, &time);
-      if((dir == 0 || dir == 1) && ((accelType == 0 && ceil(path / time) <= MOTOR_MAX) || (accelType >= 1 && accelType <= 4 && ceil(path / time * 2) <= MOTOR_MAX))) {
+      sscanf(buffer, "%d %d %d", &dir, &accelType, &tmpTime);
+      if((accelType == 0 && path / tmpTime <= MOTOR_MAX) || (accelType != 0 && path / tmpTime * 2 <= MOTOR_MAX)) {
+        time = tmpTime;
         digitalWrite(13, HIGH);
         pinMode(FOCUS, OUTPUT);
         pinMode(SHUTTER, OUTPUT);
@@ -176,10 +177,10 @@ void report() {
   Serial.print('\t');
   Serial.print(accelType);
   Serial.print('\t');
-  Serial.print(time);
+  Serial.print(time, 0);
   Serial.print('\t');
   Serial.print(time - elapsed, 0);
   Serial.print('\t');
-  Serial.print(voltage / 1.023 / i, 0);
+  Serial.print(voltage * vRatio / i, 0);
   Serial.print('\n');
 }
