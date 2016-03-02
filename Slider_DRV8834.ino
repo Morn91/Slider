@@ -10,17 +10,21 @@
 #define BATTERY 3
 #define MOTOR_MAX 750
 #define DRIVER_MAX 10000
+#define COEFFICIENT 1
 
 AccelStepper stepper(AccelStepper::DRIVER, STEP, DIR);
 
-float path, vRatio = 1, motorSpeed = 0, time = 0, elapsed = 0;
+float path, motorSpeed = 0, time = 0, elapsed = 0;
 int accelType = 0, dir = 0, micRes[2] = {0, 1};
 unsigned long start = 0;
 
 void setup() {
-  path = 900 / 2 / 14 * 200;
+  path = 900 / 2.5 / 16 * 200;
   //path (steps) = path (mm) / timing belt pitch (mm) / teeths on pulley * steps per turnover;
   Serial.begin(9600);
+  pinMode(13, OUTPUT);
+  pinMode(FOCUS, OUTPUT);
+  pinMode(SHUTTER, OUTPUT);
   stepper.setMaxSpeed(DRIVER_MAX);
   stepper.setSpeed(0);
   Timer1.initialize(20);
@@ -55,9 +59,6 @@ void tuning() {
       sscanf(buffer, "%d %d %d", &dir, &accelType, &tmpTime);
       if((accelType == 0 && path / tmpTime <= MOTOR_MAX) || (accelType != 0 && path / tmpTime * 2 <= MOTOR_MAX)) {
         time = tmpTime;
-        digitalWrite(13, HIGH);
-        pinMode(FOCUS, OUTPUT);
-        pinMode(SHUTTER, OUTPUT);
         work();
       }
       break;
@@ -77,6 +78,9 @@ void work() {
   }
   if(start == 0) {
     start = millis();
+    digitalWrite(13, HIGH);
+    digitalWrite(FOCUS, HIGH);
+    digitalWrite(SHUTTER, HIGH);
   }
   elapsed = (millis() - start) / 1000.0;
   if(elapsed < time) {
@@ -157,8 +161,8 @@ void microstep() {
 
 void stop() {
   digitalWrite(13, LOW);
-  pinMode(FOCUS, INPUT);
-  pinMode(SHUTTER, INPUT);
+  digitalWrite(FOCUS, LOW);
+  digitalWrite(SHUTTER, LOW);
   stepper.setSpeed(0);
   start = 0;
   time = 0;
@@ -181,6 +185,6 @@ void report() {
   Serial.print('\t');
   Serial.print(time - elapsed, 0);
   Serial.print('\t');
-  Serial.print(voltage * vRatio / i, 0);
+  Serial.print(voltage * COEFFICIENT / i, 0);
   Serial.print('\n');
 }
